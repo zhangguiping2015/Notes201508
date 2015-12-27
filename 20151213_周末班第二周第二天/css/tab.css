@@ -13,7 +13,7 @@ body, div, table, thead, tbody, tr, th, td {
     width: 400px;
     border: 1px solid #008000;
 
-    /*下述都是CSS3新增加的样式属性:在IE6~8下不兼容*/
+    /*锟斤拷锟斤拷锟斤拷锟斤拷CSS3锟斤拷锟斤拷锟接碉拷锟斤拷式锟斤拷锟斤拷:锟斤拷IE6~8锟铰诧拷锟斤拷锟斤拷*/
     border-radius: 5px;
     box-shadow: 3px 3px 8px 0 #999;
 }

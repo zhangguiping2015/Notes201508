@@ -34,12 +34,12 @@
     //1)匿名函数执行多少次,取决于正则能在字符串中捕获多少次 ->正则捕获两次,所以我们的匿名函数也执行两次
     //2)每一次执行匿名函数,里面传递的参数值arguments和我们自己通过exec捕获到的结果是非常的类似的(即使正则有分组,我们同样可以通过arguments获取到分组捕获的内容)
     //3)return: 你返回的结果是啥,就相当于把当前这一次大正则捕获的内容替换成你返回的内容
-    //    var str = "zhufeng2015zhufeng2016";
-    //    str = str.replace(/\d+/g, function () {
-    //        console.log(arguments[0]);//每一次执行匿名函数把我们大正则捕获的内容获取到
-    //        return 1;//我返回的1把每一次大正则匹配捕获的内容都替换了
-    //    });
-    //    console.log(str);//->"zhufeng1zhufeng1"
+        var str = "zhufeng2015zhufeng2016";
+        str = str.replace(/\d+/g, function () {
+            console.log(arguments[0]);//每一次执行匿名函数把我们大正则捕获的内容获取到
+            return 1;//我返回的1把每一次大正则匹配捕获的内容都替换了
+        });
+        console.log(str);//->"zhufeng1zhufeng1"
 
     var str = "zhufeng2015zhufeng2016";
     var reg = /(\d+)/g;

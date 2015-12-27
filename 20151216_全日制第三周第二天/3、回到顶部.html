@@ -44,7 +44,7 @@
     //实现点击回到顶部
     goBack.onclick = function () {
         var duration = 1000;//->总时间
-        var interval = 10;//->时间因子(多长时间走一步)
+        var interval = 10;//->时间因子(                                                             )
         var totalTar = win("scrollTop") - 0;//->当前的scrollTop减去目标scrollTop就是我们的总距离
         var step = (totalTar / duration) * interval;//->求出每一步走的步长
         var timer = window.setInterval(function () {

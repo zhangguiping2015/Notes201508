@@ -128,12 +128,13 @@
             if (winT >= curImgT) {
                 var trueImg = curImg.getAttribute("trueImg");
                 var oImg = new Image;
-                oImg.src = trueImg;
-                oImg.onload = function () {
+                ooImg.src = trueImg;
+                ooImg.onload = function () {
                     curImg.src = trueImg;
                     oImg = null;
+                    curImg.isLoad = true;
                 };
-                curImg.isLoad = true;
+
             }
         }
     }

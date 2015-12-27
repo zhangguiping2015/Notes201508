@@ -20,7 +20,7 @@ https://github.com/zhufengpeixun/Share201508.git (以后的作业/项目/代码�
     }
 
     Fn.num = 400;
-    Fn.prototype.num = 300;
+    Fn. vy                                                                                                                                                                                                                                                                                                                         .num = 300;
     Fn.prototype.getNum = function () {
         console.log(this.num);
     };

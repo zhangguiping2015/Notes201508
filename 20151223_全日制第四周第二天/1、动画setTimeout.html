@@ -9,14 +9,14 @@
     //JS中实现动画需要使用的是定时器(setTimeout、setInterval)
 
     //使用setInterval来实现轮询动画
-    //    var count = 0;
-    //    var timer = window.setInterval(function () {
-    //        count++;
-    //        console.log(count);
-    //        if (count >= 10) {
-    //            window.clearInterval(timer);
-    //        }
-    //    }, 1000);
+        var count = 0;
+        var timer = window.setInterval(function () {
+            count++;
+            console.log(count);
+            if (count >= 10) {
+                window.clearInterval(timer);
+            }
+        }, 1000);
 
     //使用setTimeout来实现轮询动画(递归思想:自己执行的过程中在调用自己执行)
     //    var count = 0;
@@ -53,7 +53,7 @@
     //第六次执行: return 5+4+3+2+1+0
 
     //求出1-100之间所有是3的倍数的和
-    function sum(num) {
+   /* function sum(num) {
         if (num === 0) {
             return 0;
         }
@@ -61,7 +61,7 @@
         return temp + sum(num - 1);
     }
     var total = sum(10);
-    console.log(total);
+    console.log(total);*/
 </script>
 </body>
 </html>
