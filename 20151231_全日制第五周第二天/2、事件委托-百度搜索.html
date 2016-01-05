@@ -100,7 +100,7 @@
             return;
         }
 
-        //->当前点击的是a标签,并且是#boxList盒子下的a标签
+        //->当前点击的是a标签,并且是#box                                        List盒子下的a标签
         if (tar.tagName.toLowerCase() === "a" && tar.parentNode.parentNode.id === "boxList") {
             boxList.style.display = "none";
             search.value = tar.innerHTML;
