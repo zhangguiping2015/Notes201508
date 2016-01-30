@@ -50,7 +50,7 @@ function move(e) {
         this.style.top = 0;
     } else {
         this.style.top = curT + "px";
-    }
+}
 
     //计算抛物效果的速度
     //pre存储的是上一次浏览器记录的位置
